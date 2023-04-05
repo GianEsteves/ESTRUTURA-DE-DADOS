@@ -25,7 +25,7 @@ public class Vetor implements IVetor {
 	}
 	@Override
 	public int tamanho() {
-		return tamanho();
+		return posiçao;
 	}
     @Override
     public boolean contem(Aluno aluno) {
@@ -66,8 +66,11 @@ public class Vetor implements IVetor {
             alunos[posiçao] = null;
             return true;
         } else
-            System.out.println("Aluno não localizado!");
+            System.out.println("Este aluno Nao foi cadastrado!");
         return false;
 	}
+    public char[] remove(String string) {
+        return null;
+    }
 	
 }

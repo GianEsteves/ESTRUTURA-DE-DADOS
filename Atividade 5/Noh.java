@@ -15,5 +15,6 @@ public class Noh {
         return this.next;
     }
     
-    public Noh setNext(Noh n) { return this.next = n; }
+    public Noh setProximo(Noh n) { return this.next = n; }
+
 }

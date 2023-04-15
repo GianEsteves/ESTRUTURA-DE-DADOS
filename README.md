@@ -1,6 +1,6 @@
 # ESTRUTURA-DE-DADOS
 
-1 [Atividade 02](Revisao)
+[Atividade 02](Revisao)
 
    Implemente o TAD PontoCartesiano em Java 
 
@@ -12,7 +12,7 @@
 
    Teste esse TAD em uma classe Main.
 
-2 [Atividade 03](Exercicio_02)
+[Atividade 03](Exercicio_02)
 
    Criar uma classe Aluno. Sobre um aluno devem ser guardados:
    Nome
@@ -25,13 +25,13 @@
 
    Adapte os métodos “adiciona”, “tamanho” e “contem” para o contexto de Alunos;
 
-3 [Atividade 04](Vetor)
+[Atividade 04](Vetor)
 
    Adapte o programa exemplificado em aula para um novo programa, incluindo implementações para IVetorAluno,  para um Vetor de Alunos.
 
    Crie uma classe Vetor que permita armazenar qualquer objeto dentro do vetor.
 
-4 [Atividade 05](Atividade_5)
+[Atividade 05](Atividade_5)
 
    Implemente um TAD LSE genérica de modo que seja
    possível inserir Alunos ou quaisquer outros tipos de

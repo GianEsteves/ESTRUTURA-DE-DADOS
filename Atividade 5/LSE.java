@@ -1,10 +1,11 @@
-public class LSE{
+public class LSE implements ILSE{
     private Noh begin;
     
     public LSE (){
         this.begin = null;
     }
 
+    @Override
     public void insereInicio(int info) {
         Noh novo = new Noh(info);
         if (begin == null)
@@ -15,7 +16,8 @@ public class LSE{
         }
     }
     Noh ultimo;
-    public void insereFim(int info) { //info = 9
+    @Override
+    public void insereFim(int info) {
         Noh novo = new Noh(info);
         if (begin == null)
             begin = novo;
@@ -28,6 +30,7 @@ public class LSE{
     }
 
 
+    @Override
     public boolean print() {
         Noh aux = begin;
         while (aux != null) {

@@ -33,7 +33,7 @@ Adapte o programa exemplificado em aula para um novo programa, incluindo impleme
 
 Crie uma classe Vetor que permita armazenar qualquer objeto dentro do vetor.
 
-4 [Atividade 05](Atividdade 5)
+4 [Atividade 05](Atividade 5)
 
 Implemente um TAD LSE genérica de modo que seja
 possível inserir Alunos ou quaisquer outros tipos de
@@ -42,6 +42,3 @@ objetos.
 Implemente um método para fazer a impressão da lista.
 
 
-5 [Atividade 06](Atividdade 06)
-
-6 [Atividade 07](Atividdade 07)

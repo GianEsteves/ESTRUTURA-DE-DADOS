@@ -1,3 +1,5 @@
+package Exercicio_02;
+
 public class Vetor {
     
     private int totalAlunos = 0;

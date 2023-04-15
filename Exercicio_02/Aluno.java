@@ -1,3 +1,5 @@
+package Exercicio_02;
+
 public class Aluno {
 
     double nota;

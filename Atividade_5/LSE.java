@@ -1,3 +1,5 @@
+package Atividade_5;
+
 public class LSE implements ILSE{
     private Noh begin;
     

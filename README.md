@@ -1,44 +1,48 @@
 # ESTRUTURA-DE-DADOS
 
-**Aula 02: [Atividade 02](Revisao)**
+**Aula 02:[ Atividade 02](Revisao)**
 
-   Implemente o TAD PontoCartesiano em Java 
+      Implemente o TAD PontoCartesiano em Java 
 
-   Crie um método construtor;
+      Crie um método construtor;
 
-   Getters e Setters;
+      Getters e Setters;
 
-   Crie um método que calcule a distância euclidiana entre dois pontos;
+      Crie um método que calcule a distância euclidiana entre dois pontos;
 
-   Teste esse TAD em uma classe Main.
+      Teste esse TAD em uma classe Main.
 
-**Aula 03: [Atividade 03](Exercicio_02)**
+**Aula 03:[ Atividade 03](Exercicio_02)**
 
-   Criar uma classe Aluno. Sobre um aluno devem ser guardados:
-   Nome
+      Criar uma classe Aluno. Sobre um aluno devem ser guardados:
 
-   Idade
+      Nome
 
-   Nota
+      Idade
 
-   Utilize o TAD Vetor, adaptando-o para armazenar Alunos;
+      Nota
 
-   Adapte os métodos “adiciona”, “tamanho” e “contem” para o contexto de Alunos;
+      Utilize o TAD Vetor, adaptando-o para armazenar Alunos;
 
-**Aula 04: [Atividade 04](Vetor)**
+      Adapte os métodos “adiciona”, “tamanho” e “contem” para o contexto de Alunos;
 
-   Adapte o programa exemplificado em aula para um novo programa, incluindo implementações para IVetorAluno,  para um Vetor de Alunos.
+**Aula 04:[ Atividade 04](Vetor)**
 
-   Crie uma classe Vetor que permita armazenar qualquer objeto dentro do vetor.
+      Adapte o programa exemplificado em aula para um novo programa, incluindo implementações para IVetorAluno,  para um Vetor de Alunos.
 
-**Aula 05: [Atividade 05](Atividade_5)**
+      Crie uma classe Vetor que permita armazenar qualquer objeto dentro do vetor.
 
-   Implemente um TAD LSE genérica de modo que seja
-   possível inserir Alunos ou quaisquer outros tipos de
-   objetos.
+**Aula 05:[ Atividade 05](Atividade_5)**
 
-   Implemente um método para fazer a impressão da lista.
+      Implemente um TAD LSE genérica de modo que seja possível inserir Alunos ou quaisquer outros tipos de objetos.
+
+      Implemente um método para fazer a impressão da lista.
    
-   **Aula 06: **
+ **Aula 06:[ Atividade 06](LDE_de_inteiros)**
 
+      Implemente um TAD LDE que armazena inteiros;
+
+      Em seguida, refatore o método remove() de modo que a busca ocorra em outro método e seu retorno seja utilizado no método remove();
+
+      Implemente o método de impressão de modo que seja possível escrever os inteiros em ambos os sentidos;
 

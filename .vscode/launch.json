@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main5",
+            "request": "launch",
+            "mainClass": "LDE_de_inteiros.Main5",
+            "projectName": "ESTRUTURA-DE-DADOS_e6785ba0"
+        },
+        {
+            "type": "java",
             "name": "Main2",
             "request": "launch",
             "mainClass": "Revisao.Main2",

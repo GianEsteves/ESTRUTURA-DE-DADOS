@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LerCsv",
+            "request": "launch",
+            "mainClass": "Trabalho01.LerCsv",
+            "projectName": "ESTRUTURA-DE-DADOS_e6785ba0"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Trabalho01.Main",
+            "projectName": "ESTRUTURA-DE-DADOS_e6785ba0"
+        },
+        {
+            "type": "java",
             "name": "Main5",
             "request": "launch",
             "mainClass": "LDE_de_inteiros.Main5",

@@ -6,6 +6,12 @@ public class Cliente {
     private long telefone;
     private long cpf;
     
+    public Cliente(String nome, long cnh, long telefone, long cpf) {
+        this.nome = nome;
+        this.cnh = cnh;
+        this.telefone = telefone;
+        this.cpf = cpf;
+    }
     public String getNome() {
         return nome;
     }

@@ -4,6 +4,10 @@ public class Categoria {
     private String nome;
     private int indentificador;
     
+    public Categoria(String nome, int indentificador) {
+        this.nome = nome;
+        this.indentificador = indentificador;
+    }
     public String getNome() {
         return nome;
     }

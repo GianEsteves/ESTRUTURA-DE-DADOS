@@ -52,6 +52,13 @@ public class Veiculo {
     public void setnLugares(int nLugares) {
         this.nLugares = nLugares;
     }
+    @Override
+    public String toString() {
+        return "Veiculo [placa=" + placa + ", modelo=" + modelo + ", marca=" + marca + ", ano=" + ano + ", potencia="
+                + potencia + ", nLugares=" + nLugares + "]";
+    }
+
+    
   
     
 

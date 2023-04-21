@@ -20,5 +20,10 @@ public class Categoria {
     public void setIndentificador(int indentificador) {
         this.indentificador = indentificador;
     }
+    @Override
+    public String toString() {
+        return "Categoria [nome=" + nome + ", indentificador=" + indentificador + "]";
+    }
+    
     
 }

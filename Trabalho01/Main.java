@@ -2,6 +2,7 @@ package Trabalho01;
 
 public class Main {
     public static void main(String args[]) {
+        /* 
         LDECat lista = new LDECat();
 
         Categoria categoria1 = new Categoria("Esportivo", 1010);
@@ -37,6 +38,14 @@ public class Main {
 
         System.out.println(veiculo1);
         System.out.println(veiculo2);
+        */
+
+        String arq = "teste.txt";
+        String texto = LerCsv.Read(arq);
+        if(texto.isEmpty())
+            System.out.println("Erro ao ler do arquivo!");
+        else
+            System.out.println(texto);
 
     }
-    }
+}

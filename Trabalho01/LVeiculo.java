@@ -2,11 +2,11 @@ package Trabalho01;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-public class LVeixculo {
+public class LVeiculo {
     private NohVeiculo primeiro;
     private NohVeiculo ultimo;
 
-    public LVeixculo() {
+    public LVeiculo() {
         this.primeiro = null;
         this.ultimo = null;
     }
@@ -43,7 +43,7 @@ public class LVeixculo {
             BufferedReader lerArquivo = new BufferedReader(arquivo);
             String linha = lerArquivo.readLine(); // lê a primeira linha do arquivo (cabeçalho)
             linha = lerArquivo.readLine(); // lê a próxima linha
-            LVeixculo lista = new LVeixculo();
+            LVeiculo lista = new LVeiculo();
             while (linha != null) {
                 String[] atributos = linha.split(";");
                 String placa = atributos[0];

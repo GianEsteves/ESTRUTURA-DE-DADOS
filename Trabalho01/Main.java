@@ -2,6 +2,9 @@ package Trabalho01;
 
 public class Main {
     public static void main(String args[]) {
+        LVeixculo l = new LVeixculo();
+        l.lerCsv();
+        
         /* 
         LDECat lista = new LDECat();
 
@@ -39,13 +42,6 @@ public class Main {
         System.out.println(veiculo1);
         System.out.println(veiculo2);
         */
-
-        String arq = "teste.txt";
-        String texto = LerCsv.Read(arq);
-        if(texto.isEmpty())
-            System.out.println("Erro ao ler do arquivo!");
-        else
-            System.out.println(texto);
-
+     
     }
 }

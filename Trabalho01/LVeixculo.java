@@ -22,7 +22,7 @@ public class LVeixculo {
     }
 
 
-    public void imprimirLista() {
+    public void imprimirNohVeiculo() {
         NohVeiculo atual = this.primeiro;
         while (atual != null) {
             System.out.println("placa: " + atual.placa);
@@ -58,7 +58,7 @@ public class LVeixculo {
                 linha = lerArquivo.readLine(); // lê a próxima linha
             }
             arquivo.close();
-            lista.imprimirLista();
+            lista.imprimirNohVeiculo();
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }

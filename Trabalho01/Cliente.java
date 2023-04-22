@@ -40,8 +40,4 @@ public class Cliente {
     public String toString() {
         return "Cliente [nome=" + nome + ", cnh=" + cnh + ", telefone=" + telefone + ", cpf=" + cpf + "]";
     }
-
-    
-    
-
 }

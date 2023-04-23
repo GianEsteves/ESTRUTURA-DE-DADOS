@@ -2,9 +2,11 @@ package Trabalho01;
 
 public class Main {
     public static void main(String args[]) {
-        LVeiculo l = new LVeiculo();
-        l.lerCsv();
+        LVeiculo lv = new LVeiculo();
+        lv.lerCsv();
         
+        LCategoria lc = new LCategoria();
+        lc.lerCsv();
         /* 
         LDECat lista = new LDECat();
 

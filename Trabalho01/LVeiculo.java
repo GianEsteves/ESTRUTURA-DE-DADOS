@@ -1,7 +1,9 @@
 package Trabalho01;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+
 public class LVeiculo {
     private NohVeiculo primeiro;
     private NohVeiculo ultimo;
@@ -11,16 +13,15 @@ public class LVeiculo {
         this.ultimo = null;
     }
 
-    public void adicionarNohVeiculo(NohVeiculo novoNo) {
+    public void adicionarNohVeiculo(NohVeiculo novoNoh) {
         if (this.primeiro == null) {
-            this.primeiro = novoNo;
-            this.ultimo = novoNo;
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
         } else {
-            this.ultimo.setProx(novoNo);
-            this.ultimo = novoNo;
+            this.ultimo.setProx(novoNoh);
+            this.ultimo = novoNoh;
         }
     }
-
 
     public void imprimirNohVeiculo() {
         NohVeiculo atual = this.primeiro;
@@ -35,14 +36,15 @@ public class LVeiculo {
             
         }
     }
+
     public void lerCsv(){
         
         String caminho = "C:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\ESTRUTURA-DE-DADOS\\Trabalho01\\Veiculos.csv";
         try {
             FileReader arquivo = new FileReader(caminho);
             BufferedReader lerArquivo = new BufferedReader(arquivo);
-            String linha = lerArquivo.readLine(); // lê a primeira linha do arquivo (cabeçalho)
-            linha = lerArquivo.readLine(); // lê a próxima linha
+            String linha = lerArquivo.readLine(); 
+            linha = lerArquivo.readLine(); 
             LVeiculo lista = new LVeiculo();
             while (linha != null) {
                 String[] atributos = linha.split(";");
@@ -53,9 +55,9 @@ public class LVeiculo {
                 double potencia = Double.parseDouble(atributos[4]);
                 int nLugares = Integer.parseInt(atributos[5]);
                 int categoria = Integer.parseInt(atributos[6]);
-                NohVeiculo novoNo = new NohVeiculo(placa, modelo, marca, ano, potencia, nLugares, categoria);
-                lista.adicionarNohVeiculo(novoNo);
-                linha = lerArquivo.readLine(); // lê a próxima linha
+                NohVeiculo novoNoh = new NohVeiculo(placa, modelo, marca, ano, potencia, nLugares, categoria);
+                lista.adicionarNohVeiculo(novoNoh);
+                linha = lerArquivo.readLine();
             }
             arquivo.close();
             lista.imprimirNohVeiculo();
@@ -63,4 +65,18 @@ public class LVeiculo {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
     }
+
+    public void addVeiculo(){
+
+    }
+
+    public void editarVeiculo(){
+
+    }
+
+    public void excluirVeiculo(){
+
+    }
+
+    
 }

@@ -37,8 +37,8 @@ public class LCategoria {
         try {
             FileReader arquivo = new FileReader(caminho);
             BufferedReader lerArquivo = new BufferedReader(arquivo);
-            String linha = lerArquivo.readLine(); // lê a primeira linha do arquivo (cabeçalho)
-            linha = lerArquivo.readLine(); // lê a próxima linha
+            String linha = lerArquivo.readLine();
+            linha = lerArquivo.readLine();
             LCategoria lista = new LCategoria();
             while (linha != null) {
                 String[] atributos = linha.split(";");
@@ -46,7 +46,7 @@ public class LCategoria {
                 String categoria = atributos[1];
                 NohCategoria novoNoh = new NohCategoria(codCategoria, categoria);
                 lista.adicionarNohCategoria(novoNoh);
-                linha = lerArquivo.readLine(); // lê a próxima linha
+                linha = lerArquivo.readLine();
             }
             arquivo.close();
             lista.imprimirNohCategoria();

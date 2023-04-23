@@ -9,7 +9,7 @@ public class NohVeiculo {
     protected int nLugares;
     protected int categoria;
     private NohVeiculo proximo;
-    protected NohVeiculo ant;
+    private NohVeiculo ant;
     private NohVeiculo info;
 
     public NohVeiculo(String placa, String modelo, String marca, int ano, double potencia, int nLugares, int categoria) {

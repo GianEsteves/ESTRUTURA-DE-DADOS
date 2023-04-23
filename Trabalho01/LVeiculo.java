@@ -23,7 +23,6 @@ public class LVeiculo {
         }
     }
 
-
     public void imprimirNohVeiculo() {
         NohVeiculo atual = this.primeiro;
         while (atual != null) {
@@ -37,14 +36,15 @@ public class LVeiculo {
             
         }
     }
+
     public void lerCsv(){
         
         String caminho = "C:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\ESTRUTURA-DE-DADOS\\Trabalho01\\Veiculos.csv";
         try {
             FileReader arquivo = new FileReader(caminho);
             BufferedReader lerArquivo = new BufferedReader(arquivo);
-            String linha = lerArquivo.readLine(); // lê a primeira linha do arquivo (cabeçalho)
-            linha = lerArquivo.readLine(); // lê a próxima linha
+            String linha = lerArquivo.readLine(); 
+            linha = lerArquivo.readLine(); 
             LVeiculo lista = new LVeiculo();
             while (linha != null) {
                 String[] atributos = linha.split(";");
@@ -57,7 +57,7 @@ public class LVeiculo {
                 int categoria = Integer.parseInt(atributos[6]);
                 NohVeiculo novoNoh = new NohVeiculo(placa, modelo, marca, ano, potencia, nLugares, categoria);
                 lista.adicionarNohVeiculo(novoNoh);
-                linha = lerArquivo.readLine(); // lê a próxima linha
+                linha = lerArquivo.readLine();
             }
             arquivo.close();
             lista.imprimirNohVeiculo();

@@ -65,4 +65,18 @@ public class LVeiculo {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
     }
+
+    public void addVeiculo(){
+
+    }
+
+    public void editarVeiculo(){
+
+    }
+
+    public void excluirVeiculo(){
+
+    }
+
+    
 }

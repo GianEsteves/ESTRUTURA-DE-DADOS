@@ -54,4 +54,16 @@ public class LCategoria {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
     }
+    public void addCategoria(){
+
+    }
+    
+    public void editarCategoria(){
+
+    }
+
+    public void excluirCategoria(){
+
+    }
+    
 }

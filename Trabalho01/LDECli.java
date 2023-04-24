@@ -1,6 +1,6 @@
 package Trabalho01;
 
-public class LDECli {
+public class LDECli implements ILDECli {
     private NoCli primeiro;
     private NoCli ultimo;
 
@@ -9,7 +9,8 @@ public class LDECli {
         this.ultimo = null;
     }
 
-    public void adicionarCliente(NoCli novoNoh) {
+    @Override
+    public void adicionarNoCliente(NoCli novoNoh) {
         if (this.primeiro == null) {
             this.primeiro = novoNoh;
             this.ultimo = novoNoh;
@@ -19,6 +20,7 @@ public class LDECli {
         }
     }
 
+    @Override
     public void exibirClientes() {
         NoCli atual = this.primeiro;
         while (atual != null) {
@@ -27,6 +29,20 @@ public class LDECli {
         }
     }
     
+    @Override
+    public void addCliente(){
+
+    }
+
+    @Override
+    public void editarCliente(){
+
+    }
+
+    @Override
+    public void excluirCliente(){
+
+    }
     
 
     // outros métodos da lista (ex: remover, buscar, etc.)

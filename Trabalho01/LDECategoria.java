@@ -4,14 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class LCategoria {
+public class LDECategoria implements ILDECategoria {
     private NohCategoria primeiro;
     private NohCategoria ultimo;
-    public LCategoria() {
+    public LDECategoria() {
         this.primeiro = null;
         this.ultimo = null;
     }
     
+    @Override
     public void adicionarNohCategoria(NohCategoria novoNoh) {
         if (this.primeiro == null) {
             this.primeiro = novoNoh;
@@ -22,6 +23,7 @@ public class LCategoria {
         }
     }
 
+    @Override
     public void imprimirNohCategoria() {
         NohCategoria atual = this.primeiro;
         while (atual != null) {
@@ -31,6 +33,7 @@ public class LCategoria {
             
         }
     }
+    @Override
     public void lerCsv(){
         
         String caminho = "C:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\ESTRUTURA-DE-DADOS\\Trabalho01\\Categorias.csv";
@@ -39,7 +42,7 @@ public class LCategoria {
             BufferedReader lerArquivo = new BufferedReader(arquivo);
             String linha = lerArquivo.readLine();
             linha = lerArquivo.readLine();
-            LCategoria lista = new LCategoria();
+            ILDECategoria lista = new LDECategoria();
             while (linha != null) {
                 String[] atributos = linha.split(";");
                 int codCategoria = Integer.parseInt(atributos[0]);
@@ -54,14 +57,17 @@ public class LCategoria {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
     }
+    @Override
     public void addCategoria(){
 
     }
     
+    @Override
     public void editarCategoria(){
 
     }
 
+    @Override
     public void excluirCategoria(){
 
     }

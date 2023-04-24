@@ -4,15 +4,16 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class LVeiculo {
+public class LDEVeiculo implements ILDEVeiculo {
     private NohVeiculo primeiro;
     private NohVeiculo ultimo;
 
-    public LVeiculo() {
+    public LDEVeiculo() {
         this.primeiro = null;
         this.ultimo = null;
     }
 
+    @Override
     public void adicionarNohVeiculo(NohVeiculo novoNoh) {
         if (this.primeiro == null) {
             this.primeiro = novoNoh;
@@ -23,6 +24,7 @@ public class LVeiculo {
         }
     }
 
+    @Override
     public void imprimirNohVeiculo() {
         NohVeiculo atual = this.primeiro;
         while (atual != null) {
@@ -37,6 +39,7 @@ public class LVeiculo {
         }
     }
 
+    @Override
     public void lerCsv(){
         
         String caminho = "C:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\ESTRUTURA-DE-DADOS\\Trabalho01\\Veiculos.csv";
@@ -45,7 +48,7 @@ public class LVeiculo {
             BufferedReader lerArquivo = new BufferedReader(arquivo);
             String linha = lerArquivo.readLine(); 
             linha = lerArquivo.readLine(); 
-            LVeiculo lista = new LVeiculo();
+            ILDEVeiculo lista = new LDEVeiculo();
             while (linha != null) {
                 String[] atributos = linha.split(";");
                 String placa = atributos[0];
@@ -66,14 +69,17 @@ public class LVeiculo {
         }
     }
 
+    @Override
     public void addVeiculo(){
 
     }
 
+    @Override
     public void editarVeiculo(){
 
     }
 
+    @Override
     public void excluirVeiculo(){
 
     }

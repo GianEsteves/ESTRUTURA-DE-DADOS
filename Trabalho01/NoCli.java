@@ -1,36 +1,35 @@
 package Trabalho01;
 
 public class NoCli {
-    private Cliente cliente;
     private NoCli proximo;
     private NoCli anterior;
-
-    public NoCli(Cliente cliente) {
-        this.cliente = cliente;
+    protected String nome;
+    protected long cnh;
+    protected long telefone;
+    protected long cpf;
+    private NoCli info;
+    
+    public NoCli(String nome, long cnh, long telefone, long cpf) {
+        this.nome = nome;
+        this.cnh = cnh;
+        this.telefone = telefone;
+        this.cpf = cpf;
     }
 
-    // getters e setters
-    public Cliente getCliente() {
-        return cliente;
+    public void setProx(NoCli n) { this.proximo = n; }
+
+    public void setAnt(NoCli n) { this.anterior = n; }
+    
+    public NoCli getInfo() {
+        return this.info;
+    }
+    public NoCli getProx() {
+        return this.proximo;
+    }
+    public NoCli getAnt() {
+        return this.anterior;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
 
-    public NoCli getProximo() {
-        return proximo;
-    }
-
-    public void setProximo(NoCli proximo) {
-        this.proximo = proximo;
-    }
-
-    public NoCli getAnterior() {
-        return anterior;
-    }
-
-    public void setAnterior(NoCli anterior) {
-        this.anterior = anterior;
-    }
+    
 }

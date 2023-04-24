@@ -11,13 +11,6 @@ public class NohCategoria {
         this.codCategoria = codCategoria;
         this.categoria = categoria;
     }
-    public NohCategoria(int codCategoria, String categoria, NohCategoria proximo, NohCategoria ant, NohCategoria info) {
-        this.codCategoria = codCategoria;
-        this.categoria = categoria;
-        this.proximo = proximo;
-        this.ant = ant;
-        this.info = info;
-    }
 
     public void setProx(NohCategoria n) { this.proximo = n; }
 

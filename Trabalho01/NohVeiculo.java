@@ -22,19 +22,6 @@ public class NohVeiculo {
         this.categoria = categoria;
     }
 
-    public NohVeiculo(String placa, String modelo, String marca, int ano, double potencia, int nLugares, int categoria, NohVeiculo info, NohVeiculo ant) {
-        this.placa = placa;
-        this.modelo = modelo;
-        this.marca = marca;
-        this.ano = ano;
-        this.potencia = potencia;
-        this.nLugares = nLugares;
-        this.proximo = null;
-        this.categoria = categoria;
-        this.info = info;
-        this.ant = null;
-    }
-
     public void setProx(NohVeiculo n) { this.proximo = n; }
 
     public void setAnt(NohVeiculo n) { this.ant = n; }

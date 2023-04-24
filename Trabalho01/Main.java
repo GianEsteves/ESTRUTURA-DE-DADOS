@@ -2,11 +2,24 @@ package Trabalho01;
 
 public class Main {
     public static void main(String args[]) {
-        LVeiculo lv = new LVeiculo();
-        lv.lerCsv();
+        //LVeiculo lv = new LVeiculo();
+        //lv.lerCsv();
         
-        LCategoria lc = new LCategoria();
-        lc.lerCsv();
+        //NohVeiculo nohVeiculo = new NohVeiculo(null, null, null, 0, 0, 0, 0);
+        //LVeiculo lv = new LVeiculo();
+        //lv.adicionarNohVeiculo(nohVeiculo);
+
+        //lv.imprimirNohVeiculo();
+
+        //LCategoria lc = new LCategoria();
+        //lc.lerCsv();
+
+        //NoCli novoCliente = new NoCli("João", 123456789, 987654321, 1122233344);
+        //LDECli listaClientes = new LDECli(null, null);
+        //listaClientes.adicionarCliente(novoCliente);
+
+        //LDECli lCli = new LDECli(null, null);
+        //lCli.adicionarCliente(null);
         /* 
         LDECat lista = new LDECat();
 

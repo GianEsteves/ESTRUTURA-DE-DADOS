@@ -47,8 +47,16 @@
       Em seguida, refatore o método remove() de modo que a busca ocorra em outro método e seu retorno seja utilizado no método remove();
 
       Implemente o método de impressão de modo que seja possível escrever os inteiros em ambos os sentidos;
+
+ **Aula 06:[ Atividade 06](LDE_de_Objet)**
+      Implemente um TAD LDE genérica (Object);
       
-      Trabalho 1
+      Em seguida, faça com que ela armazene Alunos;
+      
+      Implemente o método de impressão de modo que seja possível escrever os objetos em ambos os sentidos.
+
+ **Aula 06:[Trabalho01](Trabalho01)**
+      
       
 # Marco 2
 

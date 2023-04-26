@@ -8,10 +8,14 @@ public interface ILDEVeiculo {
 
     void lerCsv();
 
-    void addVeiculo();
+    /*void listarVeiculo();*/
 
-    void editarVeiculo();
+    void listarInicioFimVeiculo();
 
-    void excluirVeiculo();
+    void listarFimInicioVeiculo();
+
+    void editarVeiculo(String placa);
+
+    void excluirVeiculo(String placa);
 
 }

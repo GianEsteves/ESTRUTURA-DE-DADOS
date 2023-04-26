@@ -25,6 +25,23 @@ public class NohCategoria {
     public NohCategoria getAnt() {
         return this.ant;
     }
+
+    public int getCodCategoria() {
+        return codCategoria;
+    }
+
+    public void setCodCategoria(int codCategoria) {
+        this.codCategoria = codCategoria;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
     
 
 }

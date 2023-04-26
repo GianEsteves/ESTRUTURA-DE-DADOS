@@ -8,10 +8,12 @@ public interface ILDECategoria {
 
     void lerCsv();
 
-    void addCategoria();
+    void listarInicioFimCategoria();
 
-    void editarCategoria();
+    void listarFimInicioCategoria();
 
-    void excluirCategoria();
+    void editarCategoria(int codCategoria);
+
+    void excluirCategoria(int codCategoria);
 
 }

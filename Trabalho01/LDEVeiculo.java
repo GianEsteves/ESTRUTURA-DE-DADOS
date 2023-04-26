@@ -35,19 +35,19 @@ public class LDEVeiculo implements ILDEVeiculo {
             System.out.println("potencia: " + atual.potencia);
             System.out.println("Categoria" + atual.categoria + "\n");
             atual = atual.getProx();
-            
+
         }
     }
 
     @Override
-    public void lerCsv(){
-        
+    public void lerCsv() {
+
         String caminho = "C:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\ESTRUTURA-DE-DADOS\\Trabalho01\\Veiculos.csv";
         try {
             FileReader arquivo = new FileReader(caminho);
             BufferedReader lerArquivo = new BufferedReader(arquivo);
-            String linha = lerArquivo.readLine(); 
-            linha = lerArquivo.readLine(); 
+            String linha = lerArquivo.readLine();
+            linha = lerArquivo.readLine();
             ILDEVeiculo lista = new LDEVeiculo();
             while (linha != null) {
                 String[] atributos = linha.split(";");
@@ -68,21 +68,85 @@ public class LDEVeiculo implements ILDEVeiculo {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
         }
     }
+    /*
+     * @Override
+     * public void listarVeiculo(){
+     * NohVeiculo atual = this.primeiro;
+     * while (atual != null) {
+     * System.out.println("Placa: " + atual.placa + ", Modelo: " + atual.modelo +
+     * ", Marca: " + atual.marca
+     * + ", Ano: " + atual.ano + ", Número de Lugares: " + atual.nLugares +
+     * "e Potencia: " + atual.potencia);
+     * atual = atual.getProx();
+     * }
+     * 
+     * }
+     */
 
     @Override
-    public void addVeiculo(){
+    public void editarVeiculo(String placa) {
+        NohVeiculo atual = this.primeiro;
+        while (atual != null) {
+            if (atual.getPlaca().equals(placa)) {
+                atual.setModelo(null);
+                atual.setMarca(null);
+                atual.setAno(0);
+                atual.setPotencia(0);
+                atual.setnLugares(0);
+                break;
+            }
+            atual = atual.getProx();
+        }
 
     }
 
     @Override
-    public void editarVeiculo(){
+    public void excluirVeiculo(String placa) {
+        NohVeiculo atual = this.primeiro;
+        while (atual != null) {
+            if (atual.getPlaca().equals(placa)) {
+                if (atual == primeiro) {
+                    primeiro = atual.getProx();
+                    if (primeiro != null) {
+                        primeiro.setAnt(null);
+                    } else {
+                        ultimo = null;
+                    }
+                } else if (atual == ultimo) {
+                    ultimo = atual.getAnt();
+                    ultimo.setProx(null);
+                } else {
+                    atual.getAnt().setProx(atual.getProx());
+                    atual.getProx().setAnt(atual.getAnt());
+                }
+                break;
+            }
+            atual = atual.getProx();
+        }
 
     }
 
     @Override
-    public void excluirVeiculo(){
+    public void listarInicioFimVeiculo() {
+        NohVeiculo atual = this.primeiro;
+        while (atual != null) {
+            System.out.println("Placa: " + atual.placa + ", Modelo: " + atual.modelo + ", Marca: " + atual.marca
+                    + ", Ano: " + atual.ano + ", Número de Lugares: " + atual.nLugares + "e Potencia: "
+                    + atual.potencia);
+            atual = atual.getProx();
+        }
+    }
+
+    @Override
+    public void listarFimInicioVeiculo() {
+        NohVeiculo atual = this.ultimo;
+        while (atual != null) {
+            System.out.println("Placa: " + atual.placa + ", Modelo: " + atual.modelo + ", Marca: " + atual.marca
+                    + ", Ano: " + atual.ano + ", Número de Lugares: " + atual.nLugares + "e Potencia: "
+                    + atual.potencia);
+            atual = atual.getAnt();
+        }
 
     }
 
-    
 }

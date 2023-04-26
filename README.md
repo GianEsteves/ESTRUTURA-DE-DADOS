@@ -48,14 +48,14 @@
 
       Implemente o método de impressão de modo que seja possível escrever os inteiros em ambos os sentidos;
 
- **Aula 06:[ Atividade 06](LDE_de_Objet)**
+ **Aula 07:[ Atividade 06](LDE_de_Objet)**
       Implemente um TAD LDE genérica (Object);
       
       Em seguida, faça com que ela armazene Alunos;
       
       Implemente o método de impressão de modo que seja possível escrever os objetos em ambos os sentidos.
 
- **Aula 06:[Trabalho01](Trabalho01)**
+ **[Trabalho01](Trabalho01)**
       
       
 # Marco 2

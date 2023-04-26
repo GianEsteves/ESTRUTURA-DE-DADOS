@@ -48,7 +48,7 @@
 
       Implemente o método de impressão de modo que seja possível escrever os inteiros em ambos os sentidos;
 
- **Aula 07:[ Atividade 06](LDE_Objet)**
+ **Aula 07:[ Atividade 07](LDE_Objet)**
  
       Implemente um TAD LDE genérica (Object);
       

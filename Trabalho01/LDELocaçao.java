@@ -9,6 +9,9 @@ public class LDELocaçao implements ILDELocacao{
         this.ultimo = ultimo;
     }
 
+    public LDELocaçao(NohCliente cliente, NohVeiculo veiculo) {
+    }
+
     @Override
     public void adicionarNoLocacao(NohLocaçao novoNoh) {
         if (this.primeiro == null) {
@@ -20,6 +23,14 @@ public class LDELocaçao implements ILDELocacao{
         }
         
     }
+
+    public void alocarVeiculoCliente(NohCliente cliente, NohVeiculo veiculo) {
+        LDELocaçao locacao = new LDELocaçao(cliente, veiculo);
+        NohLocaçao novoNoh = new NohLocaçao(locacao);
+        adicionarNoLocacao(novoNoh);
+        System.out.println("Veículo alocado com sucesso para o cliente " + cliente.getNome() + "!");
+    }
+    
 
     @Override
     public void excluirLocacao() {/*

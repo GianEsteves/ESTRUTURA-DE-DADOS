@@ -1,4 +1,15 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable"
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\Diretorio\\javafx-sdk-19\\lib\\javafx.base.jar",
+        "c:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\Diretorio\\javafx-sdk-19\\lib\\javafx.controls.jar",
+        "c:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\Diretorio\\javafx-sdk-19\\lib\\javafx.fxml.jar",
+        "c:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\Diretorio\\javafx-sdk-19\\lib\\javafx.graphics.jar",
+        "c:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\Diretorio\\javafx-sdk-19\\lib\\javafx.media.jar",
+        "c:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\Diretorio\\javafx-sdk-19\\lib\\javafx.swing.jar",
+        "c:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\Diretorio\\javafx-sdk-19\\lib\\javafx.web.jar",
+        "c:\\Users\\giann\\OneDrive\\Área de Trabalho\\unipampa\\_Codigos\\Vscode\\Diretorio\\javafx-sdk-19\\lib\\javafx-swt.jar"
+    ]
 }

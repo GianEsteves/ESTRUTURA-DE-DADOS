@@ -85,6 +85,7 @@ public class LDEVeiculo implements ILDEVeiculo {
 
     @Override
     public void editarVeiculo(String placa) {
+        lerCsv();
         NohVeiculo atual = this.primeiro;
         while (atual != null) {
             if (atual.getPlaca().equals(placa)) {

@@ -20,6 +20,10 @@ public class NohLocaçao {
     }
 
 
+    public NohLocaçao(LDELocaçao locacao) {
+    }
+
+
     public NohLocaçao getProx() {
         return proximo;
     }
@@ -72,6 +76,10 @@ public class NohLocaçao {
 
     public NohCliente getNohCliente() {
         return nohCliente;
+    }
+
+    public NohVeiculo getNohVeiculo() {
+        return nohVeiculo;
     }
 
 

@@ -1,15 +1,13 @@
 package Trabalho01;
 
-import javafx.application.Application;
-
 public class Main {
     public static void main(String args[]) {
         
 
-        //NohVeiculo nohVeiculo = new NohVeiculo("abc1234", "nao sei", "sei la", 2004, 250, 5, 1010);
-        //LDEVeiculo lVeiculo = new LDEVeiculo();
-        //lVeiculo.adicionarNohVeiculo(nohVeiculo);
-        //lVeiculo.listarInicioFimVeiculo();
+        NohVeiculo nohVeiculo = new NohVeiculo("abc1234", "nao sei", "sei la", 2004, 250, 5, 1010);
+        LDEVeiculo lVeiculo = new LDEVeiculo();
+        lVeiculo.adicionarNohVeiculo(nohVeiculo);
+        lVeiculo.listarInicioFimVeiculo();
 
         //lv.imprimirNohVeiculo();
 

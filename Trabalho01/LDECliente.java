@@ -96,8 +96,8 @@ public class LDECliente implements ILDECliente {
 
     }
 
-    @Override
-    public void excluirCliente(Long cpf) {
+    //@Override
+    /*public void excluirCliente(Long cpf) {
         NohCliente atual = this.primeiro;
     while (atual != null) {
         if (atual.getCpf()==(cpf)) {
@@ -154,14 +154,14 @@ public class LDECliente implements ILDECliente {
 
  public void excluir(long cpf) {
     if (tamanho == 0) {
-    System.out.println("A lista está vazia!");
+        System.out.println("A lista está vazia!");
     } else {
-    NohCliente atual = primeiro;
-    while (atual != null && atual.getCpf() != cpf) {
-        atual = atual.getProx();
-    }
-    if (atual == null) {
-        System.out.println("O cliente não foi encontrado!");
+        NohCliente atual = primeiro;
+        while (atual != null && atual.getCpf() != cpf) {
+               atual = atual.getProx();
+            }
+        if (atual == null) {
+            System.out.println("O cliente não foi encontrado!");
     } else {
         if (atual.getAnt() != null) {
             atual.getAnt().setProx(atual.getProx());
@@ -173,10 +173,10 @@ public class LDECliente implements ILDECliente {
         } else {
             ultimo = atual.getAnt();
         }
-        tamanho--;
+            tamanho--;
         System.out.println("O cliente " + atual.getNome() + " foi removido com sucesso!");
-     }
-    }
+            }
+        }
     }
 
 }

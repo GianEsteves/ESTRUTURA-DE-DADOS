@@ -127,8 +127,8 @@ public class LDEVeiculo implements ILDEVeiculo {
 
     }
 
-    @Override
-    public void excluirVeiculo(String placa) {
+    //@Override
+    /*public void excluirVeiculo(String placa) {
         NohVeiculo atual = this.primeiro;
         while (atual != null) {
             if (atual.getPlaca().equals(placa)) {
@@ -151,6 +151,37 @@ public class LDEVeiculo implements ILDEVeiculo {
             atual = atual.getProx();
         }
 
+    }*/
+
+    public void excluirVeiculo(String placa) {
+        try{
+            NohVeiculo atual = this.primeiro;
+            while (atual != null) {
+                if (atual.getPlaca().equals(placa)) {
+                    if (atual == primeiro) {
+                        primeiro = atual.getProx();
+                        if (primeiro != null) {
+                            primeiro.setAnt(null);
+                        } else {
+                            ultimo = null;
+                        }
+                    } else if (atual == ultimo) {
+                        ultimo = atual.getAnt();
+                        ultimo.setProx(null);
+                    } else {
+                        atual.getAnt().setProx(atual.getProx());
+                        atual.getProx().setAnt(atual.getAnt());
+                    }
+                    break;
+                }
+                atual = atual.getProx();
+            }
+            if (atual == null) {
+                throw new Exception("Veículo não encontrado!");
+            }
+        } catch(Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     @Override

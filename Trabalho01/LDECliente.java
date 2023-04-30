@@ -3,6 +3,7 @@ package Trabalho01;
 public class LDECliente implements ILDECliente {
     private NohCliente primeiro;
     private NohCliente ultimo;
+    private int tamanho;
 
     public LDECliente(NohCliente primeiro, NohCliente ultimo) {
         this.primeiro = null;
@@ -123,7 +124,32 @@ public class LDECliente implements ILDECliente {
 }
  */
 
-
+ public void excluir(long cpf) {
+    if (tamanho == 0) {
+    System.out.println("A lista está vazia!");
+    } else {
+    NohCliente atual = primeiro;
+    while (atual != null && atual.getCpf() != cpf) {
+        atual = atual.getProx();
+    }
+    if (atual == null) {
+        System.out.println("O cliente não foi encontrado!");
+    } else {
+        if (atual.getAnt() != null) {
+            atual.getAnt().setProx(atual.getProx());
+        } else {
+            primeiro = atual.getProx();
+        }
+        if (atual.getProx() != null) {
+            atual.getProx().setAnt(atual.getAnt());
+        } else {
+            ultimo = atual.getAnt();
+        }
+        tamanho--;
+        System.out.println("O cliente " + atual.getNome() + " foi removido com sucesso!");
+     }
+    }
+    }
 
 }
 

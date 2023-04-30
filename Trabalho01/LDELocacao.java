@@ -59,8 +59,8 @@ public class LDELocacao implements ILDELocacao{
     }
     
 
-    @Override
-    public void excluirLocacao() {/*
+    //@Override
+    /*public void excluirLocacao() {
             NohLocaçao noAtual = lista.getInicio(); // começa a percorrer a lista pelo início
 
             while (noAtual != null) {
@@ -82,8 +82,36 @@ public class LDELocacao implements ILDELocacao{
             }*/
         }
         
+    public void excluirLocacao(String placa) {
+        try {
+            NohLocacao noAtual = this.primeiro; // começa a percorrer a lista pelo início
         
-
+            while (noAtual != null) {
+                Locacao locacao = noAtual.getLocacao();
+        
+                if (locacao.getVeiculo().getPlaca().equals(placa)) { // encontra o nó que contém a locação com a placa do veículo desejado
+                    if (noAtual == this.primeiro) { // se o nó a ser excluído é o primeiro
+                        this.primeiro = noAtual.getProx(); // define o próximo nó como o início da lista
+                    } else if (noAtual == this.ultimo) { // se o nó a ser excluído é o último
+                        this.ultimo = noAtual.getAnt(); // define o nó anterior como o fim da lista
+                    } else { // se o nó a ser excluído está no meio da lista
+                        noAtual.getAnt().setProx(noAtual.getProx()); // define o próximo nó do nó anterior como o próximo nó do nó atual
+                        noAtual.getProx().setAnt(noAtual.getAnt()); // define o nó anterior do próximo nó como o nó anterior do nó atual
+                    }
+                    break; // sai do loop após a exclusão ser realizada
+                }
+        
+                noAtual = noAtual.getProx(); // avança para o próximo nó
+            }
+        } catch (NullPointerException e) {
+            System.out.println("Erro de ponteiro nulo: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Erro ao excluir locação: " + e.getMessage());
+        } finally {
+            // liberar recursos, se necessário
+        }
+    }
+        
     @Override
     public void listarInicioFimLocacao() {
         

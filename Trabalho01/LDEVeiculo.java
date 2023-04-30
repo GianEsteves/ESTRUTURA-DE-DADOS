@@ -88,7 +88,7 @@ public class LDEVeiculo implements ILDEVeiculo {
         lerCsv();
         NohVeiculo atual = this.primeiro;
         while (atual != null) {
-            if (atual.getPlaca().equals(placa)) {
+            if (atual.getPlaca() == (placa)) {
                 atual.setModelo(null);
                 atual.setMarca(null);
                 atual.setAno(0);

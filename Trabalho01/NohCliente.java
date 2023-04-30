@@ -8,7 +8,6 @@ public class NohCliente {
     protected long telefone;
     protected long cpf;
     private NohCliente info;
-    public NohCliente getProx;
     
     public NohCliente(String nome, long cnh, long telefone, long cpf) {
         this.nome = nome;
@@ -62,9 +61,7 @@ public class NohCliente {
     public void setTelefone(long telefone) {
         this.telefone = telefone;
     }
-
     
 
 
-    
 }

@@ -2,12 +2,12 @@ package Trabalho01;
 
 public class Main {
     public static void main(String args[]) {
-        LDEVeiculo lv = new LDEVeiculo();
-        lv.listarFimInicioVeiculo();
+        
 
-        //NohVeiculo nohVeiculo = new NohVeiculo(null, null, null, 0, 0, 0, 0);
-        //LVeiculo lv = new LVeiculo();
-        //lv.adicionarNohVeiculo(nohVeiculo);
+        NohVeiculo nohVeiculo = new NohVeiculo("abc1234", "nao sei", "sei la", 2004, 250, 5, 1010);
+        LDEVeiculo lVeiculo = new LDEVeiculo();
+        lVeiculo.adicionarNohVeiculo(nohVeiculo);
+        lVeiculo.listarInicioFimVeiculo();
 
         //lv.imprimirNohVeiculo();
 

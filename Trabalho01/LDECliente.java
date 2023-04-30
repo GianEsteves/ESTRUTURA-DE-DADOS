@@ -31,8 +31,19 @@ public class LDECliente implements ILDECliente {
     }
 
     @Override
-    public void listarCliente() {
+    public void listarClientif() {
         NohCliente atual = this.primeiro;
+        while (atual != null) {
+            System.out.println("Nome: " + atual.nome + ", CNH: " + atual.cnh + ", Telefone: " + atual.telefone
+                    + ", CPF: " + atual.cpf);
+            atual = atual.getProx();
+        }
+
+    }
+
+    @Override
+    public void listarClientfi() {
+        NohCliente atual = this.ultimo;
         while (atual != null) {
             System.out.println("Nome: " + atual.nome + ", CNH: " + atual.cnh + ", Telefone: " + atual.telefone
                     + ", CPF: " + atual.cpf);

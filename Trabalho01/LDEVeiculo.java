@@ -129,6 +129,7 @@ public class LDEVeiculo implements ILDEVeiculo {
 
     @Override
     public void listarInicioFimVeiculo() {
+        lerCsv();
         NohVeiculo atual = this.primeiro;
         while (atual != null) {
             System.out.println("Placa: " + atual.placa + ", Modelo: " + atual.modelo + ", Marca: " + atual.marca

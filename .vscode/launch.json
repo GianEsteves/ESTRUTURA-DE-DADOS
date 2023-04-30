@@ -6,6 +6,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "Trabalho01.App",
+            "projectName": "ESTRUTURA-DE-DADOS_e6785ba0"
+        },
+        {
+            "name": "JavaFX App",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "App",
+            "vmArgs": "--module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "Main4",
             "request": "launch",
             "mainClass": "Atividade_5.Main4",
@@ -81,4 +96,11 @@
             "projectName": "ESTRUTURA-DE-DADOS_e6785ba0"
         }
     ]
+
+    
+        
+         
+
+        
+    
 }

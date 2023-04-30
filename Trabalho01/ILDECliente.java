@@ -6,7 +6,9 @@ public interface ILDECliente {
 
     void exibirClientes();
 
-    void listarCliente();
+    void listarClientif();
+
+    void listarClientfi();
 
     void editarCliente(Long cpf);
 

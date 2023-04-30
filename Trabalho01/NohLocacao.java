@@ -23,7 +23,7 @@ public class NohLocacao {
     public NohLocacao(LDELocacao locacao) {
     }
 
-    public NohLocacao getProx() {
+    public NohLocacao getProx(){
         return proximo;
     }
 

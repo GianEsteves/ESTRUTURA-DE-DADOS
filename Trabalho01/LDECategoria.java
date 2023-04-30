@@ -23,6 +23,32 @@ public class LDECategoria implements ILDECategoria {
             this.ultimo = novoNoh;
         }
     }
+    
+    @Override
+    public void adicionarCategoriaInicio(NohCategoria novoNoh) {
+
+        if (this.primeiro == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            novoNoh = this.primeiro;
+            this.primeiro = novoNoh;
+            this.primeiro = novoNoh;
+        }
+    }
+
+    @Override
+    public void adicionarCategoriaFim(NohCategoria novoNoh) {
+
+        if (this.primeiro == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            novoNoh = this.ultimo;
+            this.ultimo = novoNoh;
+            this.ultimo = novoNoh;
+        }
+    }
 
     @Override
     public void imprimirNohCategoria() {

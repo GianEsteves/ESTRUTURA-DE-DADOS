@@ -1,13 +1,57 @@
 package Trabalho01;
 
+import LDE_Objet.LDE;
+import LDE_de_inteiros.Noh;
+
 public class Main {
     public static void main(String args[]) {
         
 
-        NohVeiculo nohVeiculo = new NohVeiculo("abc1234", "nao sei", "sei la", 2004, 250, 5, 1010);
+        /*NohVeiculo nohVeiculo = new NohVeiculo("abc1234", "nao sei", "sei la", 2004, 250, 5, 1010);
         LDEVeiculo lVeiculo = new LDEVeiculo();
         lVeiculo.adicionarNohVeiculo(nohVeiculo);
-        lVeiculo.listarInicioFimVeiculo();
+        lVeiculo.listarInicioFimVeiculo();*/
+
+        NohCliente nohCliente = new NohCliente("Tamires Antunes Nunes", 123456, 997964423, 23548896);
+        LDECliente novoCliente = new LDECliente(nohCliente, nohCliente);
+        novoCliente.adicionarClienteInicio(nohCliente);
+        novoCliente.listarClientfi();
+
+        NohCliente nohCliente2 = new NohCliente("Camila Fernandes", 987654, 995451979, 32456987);
+        LDECliente novoCliente2 = new LDECliente(nohCliente, nohCliente2);
+        novoCliente2.adicionarClienteFim(nohCliente2);
+        novoCliente2.listarClientif();
+
+        NohCategoria nohCategoria = new NohCategoria(1234, "Sedan");
+        LDECategoria novaCategoria = new LDECategoria();
+        novaCategoria.adicionarCategoriaInicio(nohCategoria);
+        novaCategoria.listarInicioFimCategoria();
+
+        NohCategoria nohCategoria2 = new NohCategoria(65489, "S.U.V");
+        LDECategoria novaCategoria2 = new LDECategoria();
+        novaCategoria2.adicionarCategoriaFim(nohCategoria2);
+        novaCategoria2.listarFimInicioCategoria();
+
+        NohVeiculo nohVeiculo = new NohVeiculo("IVI-5T72","Camaro", "Chevrolet", 2012,450, 4, 0);
+        LDEVeiculo novoVeiculo = new LDEVeiculo();
+        novoVeiculo.adicionarVeiculoInicio(nohVeiculo);
+        novoVeiculo.listarInicioFimVeiculo();
+
+        NohVeiculo nohVeiculo2 = new NohVeiculo("TAM-2I96","Sedan", "Chevrolet", 2019,500, 4, 0);
+        LDEVeiculo novoVeiculo2 = new LDEVeiculo();
+        novoVeiculo2.adicionarVeiculoFim(nohVeiculo2);
+        novoVeiculo2.listarFimInicioVeiculo();
+
+        NohLocacao nohLocacao = new NohLocacao();
+        LDELocacao novaLocacao = new LDELocacao(nohCliente, nohVeiculo);
+        novaLocacao.adicionarLocacaoInicio(nohLocacao);
+        novaLocacao.listarInicioFimLocacao();
+
+        NohLocacao nohLocacao2 = new NohLocacao();
+        LDELocacao novaLocacao2 = new LDELocacao(nohCliente2, nohVeiculo2);
+        novaLocacao2.adicionarLocacaoFim(nohLocacao2);
+        novaLocacao2.listarFimInicioLocacao();
+        
 
         //lv.imprimirNohVeiculo();
 

@@ -25,6 +25,32 @@ public class LDEVeiculo implements ILDEVeiculo {
     }
 
     @Override
+    public void adicionarVeiculoInicio(NohVeiculo novoNoh) {
+
+        if (this.primeiro == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            novoNoh = this.primeiro;
+            this.primeiro = novoNoh;
+            this.primeiro = novoNoh;
+        }
+    }
+
+    @Override
+    public void adicionarVeiculoFim(NohVeiculo novoNoh) {
+
+        if (this.primeiro == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            novoNoh = this.ultimo;
+            this.ultimo = novoNoh;
+            this.ultimo = novoNoh;
+        }
+    }
+
+    @Override
     public void imprimirNohVeiculo() {
         NohVeiculo atual = this.primeiro;
         while (atual != null) {

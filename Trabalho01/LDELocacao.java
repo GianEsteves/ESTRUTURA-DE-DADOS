@@ -1,19 +1,19 @@
 package Trabalho01;
 
-public class LDELocaçao implements ILDELocacao{
-    private NohLocaçao primeiro;
-    private NohLocaçao ultimo;
+public class LDELocacao implements ILDELocacao{
+    private NohLocacao primeiro;
+    private NohLocacao ultimo;
 
-    public LDELocaçao(NohLocaçao primeiro, NohLocaçao ultimo){
+    public LDELocacao(NohLocacao primeiro, NohLocacao ultimo){
         this.primeiro = primeiro;
         this.ultimo = ultimo;
     }
 
-    public LDELocaçao(NohCliente cliente, NohVeiculo veiculo) {
+    public LDELocacao(NohCliente cliente, NohVeiculo veiculo) {
     }
 
     @Override
-    public void adicionarNoLocacao(NohLocaçao novoNoh) {
+    public void adicionarNoLocacao(NohLocacao novoNoh) {
         if (this.primeiro == null) {
             this.primeiro = novoNoh;
             this.ultimo = novoNoh;
@@ -24,9 +24,35 @@ public class LDELocaçao implements ILDELocacao{
         
     }
 
+    @Override
+    public void adicionarLocacaoInicio(NohLocacao novoNoh) {
+
+        if (this.primeiro == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            novoNoh = this.primeiro;
+            this.primeiro = novoNoh;
+            this.primeiro = novoNoh;
+        }
+    }
+
+    @Override
+    public void adicionarLocacaoFim(NohLocacao novoNoh) {
+
+        if (this.primeiro == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            novoNoh = this.ultimo;
+            this.ultimo = novoNoh;
+            this.ultimo = novoNoh;
+        }
+    }
+
     public void alocarVeiculoCliente(NohCliente cliente, NohVeiculo veiculo) {
-        LDELocaçao locacao = new LDELocaçao(cliente, veiculo);
-        NohLocaçao novoNoh = new NohLocaçao(locacao);
+        LDELocacao locacao = new LDELocacao(cliente, veiculo);
+        NohLocacao novoNoh = new NohLocacao(locacao);
         adicionarNoLocacao(novoNoh);
         System.out.println("Veículo alocado com sucesso para o cliente " + cliente.getNome() + "!");
     }

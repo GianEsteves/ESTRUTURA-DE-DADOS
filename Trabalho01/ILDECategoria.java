@@ -4,7 +4,12 @@ public interface ILDECategoria {
 
     void adicionarNohCategoria(NohCategoria novoNoh);
 
+    void adicionarCategoriaInicio(NohCategoria novoNoh);
+
+    void adicionarCategoriaFim(NohCategoria novoNoh);
+
     void imprimirNohCategoria();
+
 
     void lerCsv();
 

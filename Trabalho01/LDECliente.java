@@ -22,6 +22,34 @@ public class LDECliente implements ILDECliente {
     }
 
     @Override
+    public void adicionarClienteInicio(NohCliente novoNoh) {
+        /* NohCliente novoCliente = new NohCliente(null, 0, 0, 0); */
+
+        if (this.primeiro == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            novoNoh = this.primeiro;
+            this.primeiro = novoNoh;
+            this.primeiro = novoNoh;
+        }
+    }
+
+    @Override
+    public void adicionarClienteFim(NohCliente novoNoh) {
+        /* NohCliente novoCliente = new NohCliente(null, 0, 0, 0); */
+
+        if (this.primeiro == null) {
+            this.primeiro = novoNoh;
+            this.ultimo = novoNoh;
+        } else {
+            novoNoh = this.ultimo;
+            this.ultimo = novoNoh;
+            this.ultimo = novoNoh;
+        }
+    }
+
+    @Override
     public void exibirClientes() {
         NohCliente atual = this.primeiro;
         while (atual != null) {

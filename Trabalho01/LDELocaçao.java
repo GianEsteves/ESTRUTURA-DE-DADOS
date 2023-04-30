@@ -35,7 +35,7 @@ public class LDELocaçao implements ILDELocacao{
     @Override
     public void excluirLocacao() {/*
             NohLocaçao noAtual = lista.getInicio(); // começa a percorrer a lista pelo início
-            
+
             while (noAtual != null) {
                 Locacao locacao = noAtual.getLocacao();
                 

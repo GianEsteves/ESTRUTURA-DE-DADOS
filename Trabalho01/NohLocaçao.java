@@ -74,15 +74,6 @@ public class NohLocaçao {
     }
 
 
-    public NohCliente getNohCliente() {
-        return nohCliente;
-    }
-
-    public NohVeiculo getNohVeiculo() {
-        return nohVeiculo;
-    }
-
-
     public void setNohCliente(NohCliente nohCliente) {
         this.nohCliente = nohCliente;
     }

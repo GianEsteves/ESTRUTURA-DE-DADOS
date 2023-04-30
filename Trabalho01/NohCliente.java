@@ -61,9 +61,7 @@ public class NohCliente {
     public void setTelefone(long telefone) {
         this.telefone = telefone;
     }
-
     
 
 
-    
 }

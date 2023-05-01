@@ -87,9 +87,9 @@ public class LDELocacao implements ILDELocacao{
             NohLocacao noAtual = this.primeiro; // começa a percorrer a lista pelo início
         
             while (noAtual != null) {
-                Locacao locacao = noAtual.getLocacao();
+                NohLocacao locacao = noAtual.getnohLocacao();
         
-                if (locacao.getVeiculo().getPlaca().equals(placa)) { // encontra o nó que contém a locação com a placa do veículo desejado
+                if (nohlocacao.getnohVeiculo().getPlaca().equals(placa)) { // encontra o nó que contém a locação com a placa do veículo desejado
                     if (noAtual == this.primeiro) { // se o nó a ser excluído é o primeiro
                         this.primeiro = noAtual.getProx(); // define o próximo nó como o início da lista
                     } else if (noAtual == this.ultimo) { // se o nó a ser excluído é o último

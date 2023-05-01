@@ -118,8 +118,8 @@ public class LDECategoria implements ILDECategoria {
 
     }
 
-    @Override
-    public void excluirCategoria(int codCategoria) {
+    //@Override
+    /*public void excluirCategoria(int codCategoria) {
         NohCategoria atual = this.primeiro;
         while (atual != null) {
             if (atual.getCodCategoria() == (codCategoria)) {
@@ -142,6 +142,34 @@ public class LDECategoria implements ILDECategoria {
             atual = atual.getProx();
         }
 
+    }*/
+
+
+    public void excluirCategoria(int codCategoria) throws NullPointerException, IllegalArgumentException {
+        NohCategoria atual = this.primeiro;
+        while (atual != null) {
+            if (atual.getCodCategoria() == codCategoria) {
+                if (atual == primeiro) {
+                    primeiro = atual.getProx();
+                    if (primeiro != null) {
+                        primeiro.setAnt(null);
+                    } else {
+                        ultimo = null;
+                    }
+                } else if (atual == ultimo) {
+                    ultimo = atual.getAnt();
+                    ultimo.setProx(null);
+                } else {
+                    atual.getAnt().setProx(atual.getProx());
+                    atual.getProx().setAnt(atual.getAnt());
+                }
+                break;
+            }
+            atual = atual.getProx();
+        }
+        if (atual == null) {
+            throw new IllegalArgumentException("Código de categoria não encontrado na lista");
+        }
     }
     /*
      * public Categoria excluirCategoria(String nomeCategoria) throws Exception {

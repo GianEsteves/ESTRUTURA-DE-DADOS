@@ -8,8 +8,8 @@ public class NohLocacao {
     private double valor;
     private Date dataRetirada;
     private Date dataDevolucao;
-    private NohCliente nohCliente;
-    private NohVeiculo nohVeiculo;
+    private NohCliente cnh;
+    private NohVeiculo placaVeiculo;
     private NohLocacao info;
     
     
@@ -73,8 +73,26 @@ public class NohLocacao {
     }
 
 
-    public void setNohCliente(NohCliente nohCliente) {
-        this.nohCliente = nohCliente;
+    
+
+
+    public NohCliente getCnh() {
+        return cnh;
+    }
+
+
+    public void setCnh(NohCliente cnh) {
+        this.cnh = cnh;
+    }
+
+
+    public NohVeiculo getPlacaVeiculo() {
+        return placaVeiculo;
+    }
+
+
+    public void setPlacaVeiculo(NohVeiculo placaVeiculo) {
+        this.placaVeiculo = placaVeiculo;
     }
 
 

@@ -45,12 +45,18 @@ public class Main {
         NohLocacao nohLocacao = new NohLocacao();
         LDELocacao novaLocacao = new LDELocacao(nohCliente, nohVeiculo);
         novaLocacao.adicionarLocacaoInicio(nohLocacao);
-        novaLocacao.listarInicioFimLocacao();
+        novaLocacao.listarInicioFimLocacao(nohLocacao);
 
         NohLocacao nohLocacao2 = new NohLocacao();
         LDELocacao novaLocacao2 = new LDELocacao(nohCliente2, nohVeiculo2);
         novaLocacao2.adicionarLocacaoFim(nohLocacao2);
-        novaLocacao2.listarFimInicioLocacao();
+        novaLocacao2.listarFimInicioLocacao(nohLocacao2);
+        
+        NohLocacao testar = new NohLocacao();
+        LDELocacao novoteste = new LDELocacao(nohLocacao2, testar);
+        novoteste.alocarVeiculoCliente(nohCliente2, nohVeiculo2);
+        novoteste.excluirLocacao(nohVeiculo2);
+        novoteste.visualizarLocacoes();
         
 
         //lv.imprimirNohVeiculo();

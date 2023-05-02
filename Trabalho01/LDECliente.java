@@ -84,97 +84,101 @@ public class LDECliente implements ILDECliente {
     @Override
     public void editarCliente(Long cpf) {
         NohCliente atual = this.primeiro;
-    while (atual != null) {
-        if (atual.getCpf()==(cpf)) {
-            atual.setNome(null);
-            atual.setCnh(0);
-            atual.setTelefone(0);
-            break;
+        while (atual != null) {
+            if (atual.getCpf() == (cpf)) {
+                atual.setNome(null);
+                atual.setCnh(0);
+                atual.setTelefone(0);
+                break;
+            }
+            atual = atual.getProx();
         }
-        atual = atual.getProx();
-    }
 
     }
 
-    //@Override
-    /*public void excluirCliente(Long cpf) {
-        NohCliente atual = this.primeiro;
-    while (atual != null) {
-        if (atual.getCpf()==(cpf)) {
-            if (atual == primeiro) {
-                primeiro = atual.getProx();
-                if (primeiro != null) {
-                    primeiro.setAnt(null);
+    // @Override
+    /*
+     * public void excluirCliente(Long cpf) {
+     * NohCliente atual = this.primeiro;
+     * while (atual != null) {
+     * if (atual.getCpf()==(cpf)) {
+     * if (atual == primeiro) {
+     * primeiro = atual.getProx();
+     * if (primeiro != null) {
+     * primeiro.setAnt(null);
+     * } else {
+     * ultimo = null;
+     * }
+     * } else if (atual == ultimo) {
+     * ultimo = atual.getAnt();
+     * ultimo.setProx(null);
+     * } else {
+     * atual.getAnt().setProx(atual.getProx());
+     * atual.getProx().setAnt(atual.getAnt());
+     * }
+     * break;
+     * }
+     * atual = atual.getProx();
+     * }
+     * }
+     * /*public void excluirCliente(Cliente cliente) {
+     * // Verifica se o cliente está atrelado a uma locação
+     * for (Locacao locacao : listaLocacoes) {
+     * if (locacao.getCliente() == cliente) {
+     * System.out.println("Não é possível excluir o cliente " + cliente.getNome() +
+     * " pois está atrelado a uma locação.");
+     * return;
+     * }
+     * }
+     * 
+     * // Remove o cliente da lista
+     * NoListaDupla atual = primeiro;
+     * while (atual != null) {
+     * if (atual.getCliente() == cliente) {
+     * if (atual == primeiro) {
+     * primeiro = atual.getProximo();
+     * } else {
+     * atual.getAnterior().setProximo(atual.getProximo());
+     * }
+     * if (atual == ultimo) {
+     * ultimo = atual.getAnterior();
+     * } else {
+     * atual.getProximo().setAnterior(atual.getAnterior());
+     * }
+     * System.out.println("O cliente " + cliente.getNome() +
+     * " foi excluído com sucesso.");
+     * return;
+     * }
+     * atual = atual.getProximo();
+     * }
+     * System.out.println("O cliente " + cliente.getNome() +
+     * " não foi encontrado na lista.");
+     * }
+     */
+    @Override
+    public void excluirCliente(Long cpf) {
+        if (tamanho == 0) {
+            System.out.println("A lista está vazia!");
+        } else {
+            NohCliente atual = primeiro;
+            while (atual != null && atual.getCpf() != cpf) {
+                atual = atual.getProx();
+            }
+            if (atual == null) {
+                System.out.println("O cliente não foi encontrado!");
+            } else {
+                if (atual.getAnt() != null) {
+                    atual.getAnt().setProx(atual.getProx());
                 } else {
-                    ultimo = null;
+                    primeiro = atual.getProx();
                 }
-            } else if (atual == ultimo) {
-                ultimo = atual.getAnt();
-                ultimo.setProx(null);
-            } else {
-                atual.getAnt().setProx(atual.getProx());
-                atual.getProx().setAnt(atual.getAnt());
-            }
-            break;
-        }
-        atual = atual.getProx();
-    }
-}
-/*public void excluirCliente(Cliente cliente) {
-    // Verifica se o cliente está atrelado a uma locação
-    for (Locacao locacao : listaLocacoes) {
-        if (locacao.getCliente() == cliente) {
-            System.out.println("Não é possível excluir o cliente " + cliente.getNome() + " pois está atrelado a uma locação.");
-            return;
-        }
-    }
-    
-    // Remove o cliente da lista
-    NoListaDupla atual = primeiro;
-    while (atual != null) {
-        if (atual.getCliente() == cliente) {
-            if (atual == primeiro) {
-                primeiro = atual.getProximo();
-            } else {
-                atual.getAnterior().setProximo(atual.getProximo());
-            }
-            if (atual == ultimo) {
-                ultimo = atual.getAnterior();
-            } else {
-                atual.getProximo().setAnterior(atual.getAnterior());
-            }
-            System.out.println("O cliente " + cliente.getNome() + " foi excluído com sucesso.");
-            return;
-        }
-        atual = atual.getProximo();
-    }
-    System.out.println("O cliente " + cliente.getNome() + " não foi encontrado na lista.");
-}
- */
-
- public void excluir(long cpf) {
-    if (tamanho == 0) {
-        System.out.println("A lista está vazia!");
-    } else {
-        NohCliente atual = primeiro;
-        while (atual != null && atual.getCpf() != cpf) {
-               atual = atual.getProx();
-            }
-        if (atual == null) {
-            System.out.println("O cliente não foi encontrado!");
-    } else {
-        if (atual.getAnt() != null) {
-            atual.getAnt().setProx(atual.getProx());
-        } else {
-            primeiro = atual.getProx();
-        }
-        if (atual.getProx() != null) {
-            atual.getProx().setAnt(atual.getAnt());
-        } else {
-            ultimo = atual.getAnt();
-        }
-            tamanho--;
-        System.out.println("O cliente " + atual.getNome() + " foi removido com sucesso!");
+                if (atual.getProx() != null) {
+                    atual.getProx().setAnt(atual.getAnt());
+                } else {
+                    ultimo = atual.getAnt();
+                }
+                tamanho--;
+                System.out.println("O cliente " + atual.getNome() + " foi removido com sucesso!");
             }
         }
     }

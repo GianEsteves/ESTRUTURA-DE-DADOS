@@ -23,7 +23,7 @@ public class LDECategoria implements ILDECategoria {
             this.ultimo = novoNoh;
         }
     }
-    
+
     @Override
     public void adicionarCategoriaInicio(NohCategoria novoNoh) {
 
@@ -118,33 +118,34 @@ public class LDECategoria implements ILDECategoria {
 
     }
 
-    //@Override
-    /*public void excluirCategoria(int codCategoria) {
-        NohCategoria atual = this.primeiro;
-        while (atual != null) {
-            if (atual.getCodCategoria() == (codCategoria)) {
-                if (atual == primeiro) {
-                    primeiro = atual.getProx();
-                    if (primeiro != null) {
-                        primeiro.setAnt(null);
-                    } else {
-                        ultimo = null;
-                    }
-                } else if (atual == ultimo) {
-                    ultimo = atual.getAnt();
-                    ultimo.setProx(null);
-                } else {
-                    atual.getAnt().setProx(atual.getProx());
-                    atual.getProx().setAnt(atual.getAnt());
-                }
-                break;
-            }
-            atual = atual.getProx();
-        }
-
-    }*/
-
-
+    // @Override
+    /*
+     * public void excluirCategoria(int codCategoria) {
+     * NohCategoria atual = this.primeiro;
+     * while (atual != null) {
+     * if (atual.getCodCategoria() == (codCategoria)) {
+     * if (atual == primeiro) {
+     * primeiro = atual.getProx();
+     * if (primeiro != null) {
+     * primeiro.setAnt(null);
+     * } else {
+     * ultimo = null;
+     * }
+     * } else if (atual == ultimo) {
+     * ultimo = atual.getAnt();
+     * ultimo.setProx(null);
+     * } else {
+     * atual.getAnt().setProx(atual.getProx());
+     * atual.getProx().setAnt(atual.getAnt());
+     * }
+     * break;
+     * }
+     * atual = atual.getProx();
+     * }
+     * 
+     * }
+     */
+    @Override
     public void excluirCategoria(int codCategoria) throws NullPointerException, IllegalArgumentException {
         NohCategoria atual = this.primeiro;
         while (atual != null) {
@@ -171,46 +172,5 @@ public class LDECategoria implements ILDECategoria {
             throw new IllegalArgumentException("Código de categoria não encontrado na lista");
         }
     }
-    /*
-     * public Categoria excluirCategoria(String nomeCategoria) throws Exception {
-     * Categoria categoriaAtual = primeiraCategoria;
-     * 
-     * // Procura pela categoria a ser excluída
-     * while (categoriaAtual != null &&
-     * !categoriaAtual.getNome().equals(nomeCategoria)) {
-     * categoriaAtual = categoriaAtual.getProxima();
-     * }
-     * 
-     * // Verifica se a categoria existe na lista encadeada
-     * if (categoriaAtual == null) {
-     * throw new Exception("Categoria não encontrada");
-     * }
-     * 
-     * // Verifica se existem veículos atrelados à categoria
-     * Veiculo veiculoAtual = primeiroVeiculo;
-     * while (veiculoAtual != null) {
-     * if (veiculoAtual.getCategoria().equals(categoriaAtual)) {
-     * throw new Exception("Existem veículos atrelados à categoria " +
-     * nomeCategoria);
-     * }
-     * veiculoAtual = veiculoAtual.getProximo();
-     * }
-     * 
-     * // Atualiza os ponteiros da lista encadeada
-     * if (categoriaAtual == primeiraCategoria) {
-     * primeiraCategoria = categoriaAtual.getProxima();
-     * } else {
-     * Categoria categoriaAnterior = primeiraCategoria;
-     * while (categoriaAnterior.getProxima() != categoriaAtual) {
-     * categoriaAnterior = categoriaAnterior.getProxima();
-     * }
-     * categoriaAnterior.setProxima(categoriaAtual.getProxima());
-     * }
-     * 
-     * // Limpa os ponteiros da categoria excluída e retorna ela
-     * categoriaAtual.setProxima(null);
-     * return categoriaAtual;
-     * }
-     */
 
 }

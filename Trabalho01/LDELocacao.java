@@ -3,8 +3,6 @@ package Trabalho01;
 public class LDELocacao implements ILDELocacao {
     private NohLocacao primeiro;
     private NohLocacao ultimo;
-    private int tamanho;
-
     public LDELocacao(NohLocacao primeiro, NohLocacao ultimo) {
         this.primeiro = primeiro;
         this.ultimo = ultimo;

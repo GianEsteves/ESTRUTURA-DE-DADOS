@@ -1,8 +1,5 @@
 package Trabalho01;
 
-import LDE_Objet.LDE;
-import LDE_de_inteiros.Noh;
-
 public class Main {
     public static void main(String args[]) {
         

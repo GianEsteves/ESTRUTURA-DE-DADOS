@@ -40,7 +40,7 @@
 
       Implemente um método para fazer a impressão da lista.
    
- **Aula 06:[ Atividade 06](LDE_de_inteiros)**
+ **Aula 06:[ Atividade 6.1](LDE_de_inteiros)**
 
       Implemente um TAD LDE que armazena inteiros;
 
@@ -48,7 +48,7 @@
 
       Implemente o método de impressão de modo que seja possível escrever os inteiros em ambos os sentidos;
 
- **Aula 07:[ Atividade 07](LDE_Objet)**
+ **Aula 07:[ Atividade 6.2](LDE_Objet)**
  
       Implemente um TAD LDE genérica (Object);
       
@@ -57,7 +57,14 @@
       Implemente o método de impressão de modo que seja possível escrever os objetos em ambos os sentidos.
 
  **[Trabalho01](Trabalho01)**
+ 
+ **Aula 10:[ Atividade 07](Recursividade)**
       
+      Utilize o TAD Vetor e implemente um método recursivo para encontrar o maior elemento.
+      
+      Implemente um método iterativo para esse fim também.
+      
+      Utilize algum método de cômputo de tempo para registrar o tempo de execução de cada um desses métodos para um vetor com 1000 números inteiros aleatórios.
       
 # Marco 2
 

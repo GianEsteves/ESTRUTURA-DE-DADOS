@@ -56,7 +56,7 @@
       
       Implemente o método de impressão de modo que seja possível escrever os objetos em ambos os sentidos.
 
- **[Aulas 7, 8 e 9: Trabalho Avaliativo I - Locadora de Veículos](Trabalho01)**
+ **Aulas 7, 8 e 9: Trabalho Avaliativo I - Locadora de Veículos:[Trabalho01](Trabalho01)**
  
  **Aula 10:[ Atividade 07](Recursividade)**
       

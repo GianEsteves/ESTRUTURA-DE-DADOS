@@ -56,7 +56,7 @@
       
       Implemente o método de impressão de modo que seja possível escrever os objetos em ambos os sentidos.
 
- **[Trabalho01](Trabalho01)**
+ **Aulas 7, 8 e 9: Trabalho Avaliativo I - Locadora de Veículos: [Trabalho01](Trabalho01)**
  
  **Aula 10:[ Atividade 07](Recursividade)**
       
@@ -66,5 +66,12 @@
       
       Utilize algum método de cômputo de tempo para registrar o tempo de execução de cada um desses métodos para um vetor com 1000 números inteiros aleatórios.
       
+ **Aula 10:[ Atividade 08](Busca_linear_e_binaria)**
+ 
+      Implementar o método de pesquisa binária com laço de repetição e outro método usando recursão;
+
+      Utilize o TAD Vetor armazenando números inteiros;
+
+      Gere um vetor aleatório com 1.000 elementos e submeta o mesmo vetor a ambos os métodos, computando o tempo para a pesquisa do último elemento armazenado no vetor.
 # Marco 2
 

@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args){
         Vetor v = new Vetor();
         //v.gerarVetorAleatorio();
-        //v.exibirvetororAleatorio();
-        //v.bubble_sort();
+        v.exibirvetororAleatorio();
+        v.bubble_sort();
         System.out.println("==============================================");
-        //v.selection_sort();
+        v.selection_sort();
         System.out.println("==============================================");
-        //v.insertion_sort();
+        v.insertion_sort();
     }
 }

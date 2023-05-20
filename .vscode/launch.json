@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Questao1.Main",
+            "projectName": "ESTRUTURA-DE-DADOS_e6785ba0"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "Ordenacão_Básica.Main",
             "projectName": "ESTRUTURA-DE-DADOS_e6785ba0"
         },

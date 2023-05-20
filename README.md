@@ -76,7 +76,12 @@
       
   **Aula 13 e 14 Prova Prática P1:[ Questao 1](Qeuestao1)**
   
-  Escreva um programa iterativo (Java) que recebe como entrada dois arranjos (dois vetores de inteiros), cada um com n elementos, e devolve como saída a interseção entre os dois. 
+      Escreva um programa iterativo (Java) que recebe como entrada dois arranjos (dois vetores de inteiros), cada um com n elementos, e devolve como saída a interseção entre os dois. 
+            
+  **Aula 13 e 14 Prova Prática P1:[ Questao 1](Qeuestao1)**
+  
+      Escreva um programa iterativo (Java) que recebe como entrada dois arranjos (dois vetores de inteiros), cada um com n elementos, e devolve como saída a interseção entre os dois. 
+      
   
  
 # Marco 2

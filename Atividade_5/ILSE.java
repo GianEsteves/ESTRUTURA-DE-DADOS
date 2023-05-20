@@ -7,4 +7,6 @@ public interface ILSE {
 
     boolean print();
 
+    void bubbleSort();
+
 }

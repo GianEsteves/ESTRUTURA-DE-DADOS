@@ -9,8 +9,8 @@ public class Noh {
     this.next = null;
     }
     
-    public Object getInfo() {
-        return this.info;
+    public int getInfo() {
+        return (int) this.info;
     }
     
     public Noh getNext() {
@@ -18,5 +18,8 @@ public class Noh {
     }
     
     public Noh setProximo(Noh n) { return this.next = n; }
+
+    public void setInfo(Object object) {
+    }
 
 }

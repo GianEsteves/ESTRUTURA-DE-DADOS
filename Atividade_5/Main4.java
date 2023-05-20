@@ -5,8 +5,9 @@ public class Main4 {
         ILSE l = new LSE();
         l.insereInicio(12);
         l.insereInicio(68);
-        l.insereFim(55);
+        //l.insereFim(55);
 
         System.out.println(l.print());
+        l.bubbleSort();
     }
 }

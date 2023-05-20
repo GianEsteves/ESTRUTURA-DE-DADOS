@@ -73,5 +73,11 @@
       Utilize o TAD Vetor armazenando números inteiros;
 
       Gere um vetor aleatório com 1.000 elementos e submeta o mesmo vetor a ambos os métodos, computando o tempo para a pesquisa do último elemento armazenado no vetor.
+      
+  **Aula 13 e 14 Prova Prática P1:[ Questao 1](Qeuestao1)**
+  
+  Escreva um programa iterativo (Java) que recebe como entrada dois arranjos (dois vetores de inteiros), cada um com n elementos, e devolve como saída a interseção entre os dois. 
+  
+ 
 # Marco 2
 

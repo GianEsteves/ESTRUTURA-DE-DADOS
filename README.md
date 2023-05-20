@@ -82,7 +82,7 @@
 
       Gere um vetor aleatório com 1.000 elementos e submeta o mesmo vetor aos métodos de ordenação, computando o tempo da execução.
       
- **Aula 13 e 14 Prova Prática P1:[ Questao 1](Qeuestao1)**
+ **Aula 13 e 14 Prova Prática P1:[ Questao 1](Questao1)**
   
       Escreva um programa iterativo (Java) que recebe como entrada dois arranjos (dois vetores de inteiros), cada um com n elementos, e devolve como saída a interseção entre os dois. 
             

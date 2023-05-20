@@ -129,5 +129,17 @@ public class LDE {//TAD Lista duplamente encadeada
         return 0;
     }
 
+    public void concat(LDE l) {
+        if (this.inicio == null) {
+            this.inicio = l.inicio;
+            this.fim = l.fim;
+        } else if (l.inicio != null) {
+            this.fim.setProx(l.inicio);
+            l.inicio.setAnt(this.fim);
+            this.fim = l.fim;
+        }
+    }
+
+
     // Restante da implementação da classe LDE
 }

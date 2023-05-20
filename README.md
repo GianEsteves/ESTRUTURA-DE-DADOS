@@ -91,8 +91,8 @@
       Implemente, em Linguagem Java, um método que calcula o enésimo termo da série de Fibonacci, tendo como base a descrição matemática recursiva a seguirs. 
                    
  **Aula 13 e 14 Prova Prática P1:[ Questao 10](Questao10)**
-  
-      Implemente, em Linguagem Java, um método que calcula o enésimo termo da série de Fibonacci, tendo como base a descrição matemática recursiva a seguirs. 
+ 
+      Ordene crescentes os elementos do vetor [3, 7, 1, 4, 9, 2], utilizando os seguintes algoritmos de ordenação: Bubble, selection e insertion sort. Mostrar o estado do vetor toda a vez que ocorrer uma troca de elementos
             
   
  

@@ -8,6 +8,8 @@ public class Main5 {
         l.insereInicio(7);
         l.insereFim(28);
 
+        l.nroPares();
+        System.out.println("|||||||||||||||||||||||||||||||||||");
 
         System.out.println("contem"+l.contem());
         l.printFI();

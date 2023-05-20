@@ -87,4 +87,18 @@ public class LDE {//TAD Lista duplamente encadeada
     public Object getU() {
         return fim.getInfo();
     }
+
+    public int nroPares() {
+        Noh aux = inicio;
+
+        while (aux != null) {
+            if (aux.getInfo() % 2 == 0) {
+                System.out.println(aux.getInfo());
+            }
+            aux = aux.getProx();
+        }
+        return 0;
+    }
+
+    // Restante da implementação da classe LDE
 }

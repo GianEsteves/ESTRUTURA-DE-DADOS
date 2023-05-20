@@ -66,19 +66,27 @@
       
       Utilize algum método de cômputo de tempo para registrar o tempo de execução de cada um desses métodos para um vetor com 1000 números inteiros aleatórios.
       
- **Aula 10:[ Atividade 08](Busca_linear_e_binaria)**
+**Aula 11:[ Atividade 09](Busca_linear_e_binaria)**
  
       Implementar o método de pesquisa binária com laço de repetição e outro método usando recursão;
 
       Utilize o TAD Vetor armazenando números inteiros;
 
       Gere um vetor aleatório com 1.000 elementos e submeta o mesmo vetor a ambos os métodos, computando o tempo para a pesquisa do último elemento armazenado no vetor.
+     
+**Aula 12:[ Atividade 10](Ordenacão_Básica)**
+ 
+      Implemente os métodos de ordenação discutidos em aula.
+
+      Utilize o TAD Vetor armazenando números inteiros;
+
+      Gere um vetor aleatório com 1.000 elementos e submeta o mesmo vetor aos métodos de ordenação, computando o tempo da execução.
       
-  **Aula 13 e 14 Prova Prática P1:[ Questao 1](Qeuestao1)**
+ **Aula 13 e 14 Prova Prática P1:[ Questao 1](Qeuestao1)**
   
       Escreva um programa iterativo (Java) que recebe como entrada dois arranjos (dois vetores de inteiros), cada um com n elementos, e devolve como saída a interseção entre os dois. 
             
-  **Aula 13 e 14 Prova Prática P1:[ Questao 1](Qeuestao1)**
+ **Aula 13 e 14 Prova Prática P1:[ Questao 1](Qeuestao1)**
   
       Escreva um programa iterativo (Java) que recebe como entrada dois arranjos (dois vetores de inteiros), cada um com n elementos, e devolve como saída a interseção entre os dois. 
       

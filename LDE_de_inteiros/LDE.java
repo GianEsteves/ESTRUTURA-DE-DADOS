@@ -33,6 +33,35 @@ public class LDE {//TAD Lista duplamente encadeada
         }
     }
 
+    public void insereInicioOrganizado(int info) {
+        Noh novo = new Noh(info);
+        if (inicio == null) {
+            inicio = novo;
+            fim = novo;
+        } else {
+            if (info <= inicio.getInfo()) { // Inserir no início
+                novo.setProx(inicio);
+                inicio.setAnt(novo);
+                inicio = novo;
+            } else {
+                Noh aux = inicio;
+                while (aux.getProx() != null && info > aux.getProx().getInfo()) {
+                    aux = aux.getProx();
+                }
+                novo.setProx(aux.getProx());
+                novo.setAnt(aux);
+                if (aux.getProx() != null) {
+                    aux.getProx().setAnt(novo);
+                } else {
+                    fim = novo;
+                }
+                aux.setProx(novo);
+            }
+        }
+    }
+    
+
+
     public boolean remove(int info) {
         Noh p = inicio;
         while (p!=null && p.getInfo() != info) //busca

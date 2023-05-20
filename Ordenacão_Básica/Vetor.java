@@ -18,9 +18,12 @@ public class Vetor {
     }
 
     public void exibirvetororAleatorio() {
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.println(vetor[i] + " ");
-
+        // Verifique se o vetor não é nulo antes de acessá-lo
+        if (vetor != null) {
+            for (int i = 0; i < vetor.length; i++) {
+                System.out.print(vetor[i] + " ");
+            }
+            System.out.println();
         }
     }
     public void bubble_sort(){
@@ -32,7 +35,7 @@ public class Vetor {
             this.vetor[j] = this.vetor[j+1];
             this.vetor[j+1] = aux;
         }
-        exibirvetororAleatorio();
+        //exibirvetororAleatorio();
     }
 
     public void selection_sort(){
@@ -46,7 +49,7 @@ public class Vetor {
             this.vetor[i] = this.vetor[menor];
             this.vetor[menor] = aux;
         }
-        exibirvetororAleatorio();
+        //exibirvetororAleatorio();
     }
 
     public void insertion_sort() {
@@ -60,7 +63,7 @@ public class Vetor {
             }
                 this.vetor[j + 1] = chave;
             }
-            exibirvetororAleatorio();
+            //exibirvetororAleatorio();
     }
     
 

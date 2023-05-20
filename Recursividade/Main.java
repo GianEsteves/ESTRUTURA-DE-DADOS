@@ -15,20 +15,22 @@ public class Main {
                 //System.out.println(numerosAleatorios[i]);
         }       
 
-        long startTimeRec = System.nanoTime();
-        long endTimeRec = System.nanoTime();
-        long durationRec = endTimeRec - startTimeRec;
-        long startTimeIt = System.nanoTime();
-        long endTimeIt = System.nanoTime();
-        long durationIt = endTimeIt - startTimeIt;
+        long inicialR = System.nanoTime(); // Tempo inicialR da recursão
+        long finalR = System.nanoTime(); // Tempo final da recursão
+        long duracaoR = finalR - inicialR; // Duração da recursão
+        
+        long inicialI = System.nanoTime(); // Tempo inicialR da iteração
+        long finalI = System.nanoTime(); // Tempo final da iteração
+        long duracaoI = finalI - inicialI; // Duração da iteração
+        
 
-        if (durationRec > durationIt) {
+        if (duracaoR > duracaoI) {
             System.out.println("Iterativo é mais rápido");
-            System.out.println("Diferença de tempo: " + (durationRec - durationIt) + " nanosegundos");
+            System.out.println("Diferença de tempo: " + (duracaoR - duracaoI) + " nanosegundos");
         }
         else {
             System.out.println("Recursivo é mais rápido");
-                System.out.println("Diferença de tempo: " + (durationIt - durationRec) + " nanosegundos");
+                System.out.println("Diferença de tempo: " + (duracaoI - duracaoR) + " nanosegundos");
         }
 
         input.close();

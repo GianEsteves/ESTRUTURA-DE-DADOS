@@ -85,7 +85,11 @@
  **Aula 13 e 14 Prova Prática P1:[ Questao 1](Questao1)**
   
       Escreva um programa iterativo (Java) que recebe como entrada dois arranjos (dois vetores de inteiros), cada um com n elementos, e devolve como saída a interseção entre os dois. 
-            
+      
+ **Aula 13 e 14 Prova Prática P1:[ Questao 1](Questao3)**
+  
+      Implemente, em Linguagem Java, um método que calcula o enésimo termo da série de Fibonacci, tendo como base a descrição matemática recursiva a seguirs. 
+                   
 
   
  

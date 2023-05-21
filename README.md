@@ -66,7 +66,7 @@
       
       Utilize algum método de cômputo de tempo para registrar o tempo de execução de cada um desses métodos para um vetor com 1000 números inteiros aleatórios.
       
-**Aula 11:[ Atividade 09](Busca_linear_e_binaria)**
+**Aula 11:[ Atividade 08](Busca_linear_e_binaria)**
  
       Implementar o método de pesquisa binária com laço de repetição e outro método usando recursão;
 
@@ -74,7 +74,7 @@
 
       Gere um vetor aleatório com 1.000 elementos e submeta o mesmo vetor a ambos os métodos, computando o tempo para a pesquisa do último elemento armazenado no vetor.
      
-**Aula 12:[ Atividade 10](Ordenacão_Básica)**
+**Aula 12:[ Atividade 9](Ordenacão_Básica)**
  
       Implemente os métodos de ordenação discutidos em aula.
 

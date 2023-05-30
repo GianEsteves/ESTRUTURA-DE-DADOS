@@ -1,6 +1,6 @@
 package Filas_vetor;
 
-public class VetFila {
+public class VetFila implements IVetFila {
 
     private int nElemFila;
     private int inicio;
@@ -12,10 +12,12 @@ public class VetFila {
         this.vetFila = new Object[tamanho];
     }
 
+    @Override
     public boolean isEmpty() {
         return (nElemFila == 0);
     }
 
+    @Override
     public boolean excluir() {
         if (this.isEmpty()) {
             System.out.println("Fila estah vazia");
@@ -26,6 +28,7 @@ public class VetFila {
         return true;
     }
 
+    @Override
     public boolean adiciona(Object info) { // método que insere na fila
         if (this.nElemFila == vetFila.length) {
             System.out.println("Capacidade da fila esgotou");
@@ -37,10 +40,12 @@ public class VetFila {
         return true;
     }
 
+    @Override
     public int size() {
         return this.nElemFila;
     }
 
+    @Override
     public int exibir() {
         if (this.isEmpty()) {
             System.out.println("Fila estah vazia");

@@ -100,3 +100,17 @@ Implemente, em Java, um método recursivo que representa a definição matemáti
  
 # Marco 2
 
+**Aula 15:[ Atividade 10](Filas_vetor)**
+ 
+Implemente os exemplos.
+
+Implemente um método para fazer a impressão da fila.
+
+**Aula 16:[ Atividade 11](Filas_lde)**
+ 
+Implemente os exemplos
+
+Implemente os métodos size() e isEmpty() e armazene alunos na fila.
+
+Implemente um método de impressão para mostrar o estado da fila.
+

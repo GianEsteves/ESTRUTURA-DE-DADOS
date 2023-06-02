@@ -10,13 +10,14 @@ public class VetPilha {
         this.numElem = 0;
     }
     
-    public void push(Object info) { // empilha
+    public boolean push(Object info) { // empilha
         if (this.numElem == pilha.length) {
             System.out.println("pilha estourou");
-            return;
+            return false;
         }
         this.pilha[this.numElem] = info;
         this.numElem++;
+        return true;
     }
     
     

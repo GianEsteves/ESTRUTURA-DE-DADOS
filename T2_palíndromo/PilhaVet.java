@@ -4,13 +4,16 @@ public class PilhaVet {
     private Object[] pilha;
     private int numElem;
     private boolean isEmpty;
-    public PilhaVet (int tamanhoVetor){ //construtor
+    private String palavraOriginal;
+    
+    public PilhaVet(int tamanhoVetor, String palavraOriginal) { // construtor
         this.pilha = new Object[tamanhoVetor];
         this.numElem = 0;
+        this.palavraOriginal = palavraOriginal;
     }
-
-    public boolean Push(Object info){ //empilha
-        if (this.numElem == pilha.length){
+    
+    public boolean push(Object info) { // empilha
+        if (this.numElem == pilha.length) {
             System.out.println("pilha estourou");
             return false;
         }
@@ -18,18 +21,19 @@ public class PilhaVet {
         this.numElem++;
         return true;
     }
-    public Object pop(){ //desempilha
+    
+    public Object pop() { // desempilha
         Object o = null;
-        if(this.isEmpty){
+        if (this.isEmpty) {
             System.out.println("Pilha vazia");
             return null;
         }
-        o = this.pilha[numElem -1];
-        this.pilha[numElem -1] = null;
+        o = this.pilha[numElem - 1];
+        this.pilha[numElem - 1] = null;
         this.numElem--;
         return o;
     }
-
+    
     public boolean isEmpty() {
         return numElem == 0;
     }
@@ -47,5 +51,22 @@ public class PilhaVet {
         }
     }
     
-
+    public void comparar() {
+        StringBuilder palavraPilha = new StringBuilder();
+        
+        for (int i = numElem - 1; i >= 0; i--) {
+            palavraPilha.append(pilha[i]);
+        }
+        
+        String palavraPilhaString = palavraPilha.toString();
+        exibirPilha();
+        System.out.println("Palavra original: " + palavraOriginal);
+        System.out.println("Palavra na pilha: " + palavraPilhaString);
+        
+        if (palavraOriginal.equals(palavraPilhaString)) {
+            System.out.println("A palavra é um palíndromo.");
+        } else {
+            System.out.println("A palavra não é um palíndomo.");
+        }
+    }
 }

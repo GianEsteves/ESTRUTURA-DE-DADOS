@@ -51,7 +51,19 @@ public class VetPilha {
     }
 
     public void top(){ // mostra o ultimo elemento aidiconado 
+        if (isEmpty()) {
+            System.out.println("Pilha vazia");
+            return;
+        }
+        System.out.println(pilha[numElem - 1]);
+    }
 
+    public void inverterPilha() {
+        Object[] temp = new Object[numElem];
+        for (int i = 0; i < numElem; i++) {
+            temp[i] = pilha[numElem - i - 1];
+        }
+        pilha = temp;
     }
     
 }

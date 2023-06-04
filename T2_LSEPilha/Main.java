@@ -13,10 +13,14 @@ public class Main {
         pilha.push("Camila");
         pilha.push("Mishelly");
         pilha.push("Carla");
+        System.out.println("Elemntos da pilha ");
         pilha.exibirPilha();
         System.out.println("===============");
         pilha.inverterPilha();
+        System.out.println("Elemntos da pilha ao contrario ");
         pilha.exibirPilha();
+        System.out.println("Elemento do topo");
+        pilha.top();
 
     }
 }

@@ -42,9 +42,7 @@ public class VetPilha {
             System.out.println("A pilha está vazia.");
             return;
         }
-        
-        System.out.println("Elementos da pilha:");
-        
+        //System.out.println("Elementos da pilha:");
         for (int i = numElem - 1; i >= 0; i--) {
             System.out.println(pilha[i]);
         }

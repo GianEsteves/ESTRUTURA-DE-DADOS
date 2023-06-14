@@ -2,24 +2,30 @@ package Mapa_Vetor;
 
 public class Main {
     public static void main(String[] args) {
+        MapaVetor mapa = new MapaVetor();
 
-        MapaHashLSE mapa = new MapaHashLSE();
+        // Criando alguns alunos
+        Aluno aluno1 = new Aluno("João", 20, "123");
+        Aluno aluno2 = new Aluno("Maria", 22, "456");
+        Aluno aluno3 = new Aluno("Pedro", 19, "789");
 
-        Aluno a1 = new Aluno(1, "Ana", 8.0, 18);
-        Aluno a2 = new Aluno(2, "Maria", 7.0, 20);
-        Aluno a3 = new Aluno(3, "Gabriela", 9.0, 25);
+        // Inserindo alunos no mapa
+        mapa.put(aluno1);
+        mapa.put(aluno2);
+        mapa.put(aluno3);
 
-        mapa.put(a1.getMatricula(), a1);
-        mapa.put(a2.getMatricula(), a2);
-        mapa.put(a3.getMatricula(), a3);
+        // Obtendo um aluno pelo número de matrícula
+        Aluno alunoEncontrado = mapa.get("456");
+        if (alunoEncontrado != null) {
+            System.out.println("Aluno encontrado: " + alunoEncontrado.getNome());
+        } else {
+            System.out.println("Aluno não encontrado.");
+        }
 
-        System.out.println(mapa.get(1));
-        System.out.println(mapa.get(2));
-        System.out.println(mapa.get(3));
+        // Removendo um aluno pelo número de matrícula
+        mapa.remove("123");
 
-        mapa.put(1, new Aluno(1, "Tamirez", 2.0, 62));
-        System.out.println(mapa.get(1));
-        
+        // Imprimindo todos os alunos do mapa
+        mapa.imprime();
     }
-
 }

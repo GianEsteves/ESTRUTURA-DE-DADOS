@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main22",
+            "request": "launch",
+            "mainClass": "Mapa_Vetor.Main22",
+            "projectName": "ESTRUTURA-DE-DADOS_e6785ba0"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Mapa_Vetor.Main",

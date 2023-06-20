@@ -1,7 +1,7 @@
 package Mapa_Vetor;
 
 public class MapaHashLSE {
-    private static final int INITIAL_CAPACITY = 10;
+    private static final int INITIAL_CAPACITY = 5;
     private static final double LOAD_FACTOR = 0.75;
 
     private ListaObj[] vetorLista;

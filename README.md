@@ -122,3 +122,44 @@ Implemente os métodos size() e isEmpty() e top() para uma pilha de alunos. Em s
 
 Implemente um método de impressão para mostrar o estado da pilha.
 
+**Aula 19:[ Atividade 13](Mapa_Vetor)**
+
+Encontre uma forma de minimizar o problema das colisões procurando pela próxima posição livre. 
+
+Dica 1: endereçamento aberto
+
+Procurar um outro índice livre do vetor para armazenar o elemento quando houver colisão
+
+Dica 2: Vetor cresce dinâmico
+
+Resize() e Rehasing()
+
+**Aula 20:[ Atividade 14](Mapa_lse)**
+
+Implementar os demais métodos remove() e get(), considerando os esquemas de colisão apresentados.
+
+Implemente o mecanismo de resize() e rehash().
+
+Faça testes criando funções de impressão do mapa.
+
+Adapte o código para o T2.
+
+# Marco 2
+
+**Aula 21:[ Atividade 15](Arvore)**
+
+Implementar o TAD ABB;
+
+Implementar o método de busca;
+
+Implementar o método de impressão (percorrer a árvore);
+
+**Aula 21:[ Atividade 16](Remocao_Arvore)**
+
+Implementar o TAD ABB;
+
+Implementar os métodos de busca apresentados;
+
+Implementar os métodos de impressão;
+
+Implementar o método de remoção de nós, pensando nos três casos;

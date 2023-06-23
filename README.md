@@ -144,7 +144,7 @@ Faça testes criando funções de impressão do mapa.
 
 Adapte o código para o T2.
 
-# Marco 2
+# Marco 3
 
 **Aula 21:[ Atividade 15](Arvore)**
 
@@ -154,7 +154,7 @@ Implementar o método de busca;
 
 Implementar o método de impressão (percorrer a árvore);
 
-**Aula 21:[ Atividade 16](Remocao_Arvore)**
+**Aula 22:[ Atividade 16](Remocao_Arvore)**
 
 Implementar o TAD ABB;
 
